@@ -4,6 +4,7 @@ const { crearArchivo } = require('./helper/multiplicar');
 
 console.clear();
 
+// argumentos por consola por posicion
 const [,,arg3 = 'base=5'] = process.argv;
 const [, base = 5] = arg3.split('=');
 
