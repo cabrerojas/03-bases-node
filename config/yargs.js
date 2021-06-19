@@ -19,6 +19,13 @@ const argv = require('yargs')
             type: 'boolean',
             describe: 'Muestra la tabla en consola'
         })
+        .option('h', {
+            alias: 'hasta',
+            default: '10' ,
+            type: 'number',
+            describe: 'Cantidad de multiplicaciones'
+        })
+        
         .argv;
 
 module.exports = argv;
